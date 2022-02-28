@@ -26,6 +26,7 @@ class _MainDNState extends State<MainDN> {
           color: secondaryColor,
         ),
       ),
+      body: Container(),
     );
   }
 }
