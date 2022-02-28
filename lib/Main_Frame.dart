@@ -13,6 +13,10 @@ class _MainDNState extends State<MainDN> {
   var mainColor = Color.fromRGBO(220, 20, 60, 1);
   var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
 
+  _dialogAddAndSave() {
+
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
