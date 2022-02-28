@@ -18,9 +18,55 @@ class _MainDNState extends State<MainDN> {
     showDialog(
         context: context,
         builder: (context){
-          return AlertDialog();
+          return AlertDialog(
+            title: Text("Add a new note:"),
+            titleTextStyle: TextStyle(
+              fontSize: 23,
+              fontWeight: FontWeight.w600,
+              color: mainColor,
+            ),
+            backgroundColor: secondaryColor,
+            content: Column(
+              children: <Widget>[
+                TextField(
+                  autofocus: true,
+                  decoration: InputDecoration(
+                    labelText: "Title",
+                    labelStyle: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      color: mainColor,
+                    ),
+                    hintText: "Write the title...",
+                    hintStyle: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                      color: mainColor,
+                    ),
+                  ),
+                ),
+                TextField(
+                  autofocus: true,
+                  decoration: InputDecoration(
+                    labelText: "Description",
+                    labelStyle: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w700,
+                      color: mainColor,
+                    ),
+                    hintText: "Write the description...",
+                    hintStyle: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.w400,
+                      color: mainColor,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          );
         },
-    )
+    );
 
   }
 
