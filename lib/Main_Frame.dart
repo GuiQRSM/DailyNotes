@@ -15,6 +15,10 @@ class _MainDNState extends State<MainDN> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return Scaffold(
+      appBar: AppBar(
+
+      ),
+    );
   }
 }
