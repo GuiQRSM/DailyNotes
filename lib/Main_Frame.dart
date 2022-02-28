@@ -27,7 +27,21 @@ class _MainDNState extends State<MainDN> {
         ),
       ),
       body: Container(),
-      floatingActionButton: FloatingActionButton.extended(onPressed: onPressed, label: label),
+      floatingActionButton: FloatingActionButton.extended(
+          label: Text(
+            "add a note",
+            style: TextStyle(
+              fontWeight: FontWeight.w600,
+            ),
+          ),
+          icon: Icon(
+            Icons.note_add,
+          ),
+          backgroundColor: mainColor,
+          foregroundColor: secondaryColor,
+          elevation: 22,
+          onPressed: (){},
+      ),
     );
   }
 }
