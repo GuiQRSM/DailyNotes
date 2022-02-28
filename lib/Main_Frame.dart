@@ -12,6 +12,8 @@ class _MainDNState extends State<MainDN> {
 
   var mainColor = Color.fromRGBO(220, 20, 60, 1);
   var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
+  TextEditingController _titleController = TextEditingController();
+  TextEditingController _descriptionController = TextEditingController();
 
   _dialogAddAndSave() {
 
@@ -29,6 +31,7 @@ class _MainDNState extends State<MainDN> {
             content: Column(
               children: <Widget>[
                 TextField(
+                  controller: _titleController,
                   autofocus: true,
                   decoration: InputDecoration(
                     labelText: "Title",
@@ -46,6 +49,7 @@ class _MainDNState extends State<MainDN> {
                   ),
                 ),
                 TextField(
+                  controller: _descriptionController,
                   autofocus: true,
                   decoration: InputDecoration(
                     labelText: "Description",
