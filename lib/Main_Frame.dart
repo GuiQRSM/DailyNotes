@@ -29,6 +29,7 @@ class _MainDNState extends State<MainDN> {
             ),
             backgroundColor: secondaryColor,
             content: Column(
+              mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 TextField(
                   controller: _titleController,
