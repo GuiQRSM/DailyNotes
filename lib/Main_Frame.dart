@@ -68,6 +68,24 @@ class _MainDNState extends State<MainDN> {
                 ),
               ],
             ),
+            actions: <Widget>[
+              FlatButton(
+                padding: EdgeInsets.all(10),
+                color: mainColor,
+                textColor: secondaryColor,
+                child: Text("Cancel"),
+                onPressed: () => Navigator.pop(context),
+              ),
+              FlatButton(
+                padding: EdgeInsets.all(10),
+                color: mainColor,
+                textColor: secondaryColor,
+                child: Text("Save"),
+                onPressed: (){
+                  Navigator.pop(context);
+                },
+              ),
+            ],
           );
         },
     );
