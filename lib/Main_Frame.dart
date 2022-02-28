@@ -27,6 +27,7 @@ class _MainDNState extends State<MainDN> {
         ),
       ),
       body: Container(),
+      floatingActionButton: FloatingActionButton.extended(onPressed: onPressed, label: label),
     );
   }
 }
