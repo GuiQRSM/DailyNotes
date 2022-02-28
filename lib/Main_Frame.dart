@@ -42,6 +42,7 @@ class _MainDNState extends State<MainDN> {
           elevation: 22,
           onPressed: (){},
       ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
   }
 }
