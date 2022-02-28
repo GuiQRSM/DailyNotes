@@ -44,7 +44,9 @@ class _MainDNState extends State<MainDN> {
           backgroundColor: mainColor,
           foregroundColor: secondaryColor,
           elevation: 22,
-          onPressed: (){},
+          onPressed: (){
+            _dialogAddAndSave();
+          },
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
     );
