@@ -9,6 +9,10 @@ class MainDN extends StatefulWidget {
 }
 
 class _MainDNState extends State<MainDN> {
+
+  var mainColor = Color.fromRGBO(255, 127, 80, 1);
+  var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold();
