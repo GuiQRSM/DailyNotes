@@ -17,7 +17,9 @@ class _MainDNState extends State<MainDN> {
 
     showDialog(
         context: context,
-        builder: builder,
+        builder: (context){
+          return AlertDialog();
+        },
     )
 
   }
