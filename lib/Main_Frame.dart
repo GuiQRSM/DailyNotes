@@ -34,6 +34,11 @@ class _MainDNState extends State<MainDN> {
                 TextField(
                   controller: _titleController,
                   autofocus: true,
+                  style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                    color: mainColor,
+                  ),
                   decoration: InputDecoration(
                     labelText: "Title",
                     labelStyle: TextStyle(
@@ -47,11 +52,22 @@ class _MainDNState extends State<MainDN> {
                       fontWeight: FontWeight.w400,
                       color: mainColor,
                     ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
                   ),
                 ),
                 TextField(
                   controller: _descriptionController,
                   autofocus: true,
+                  style: TextStyle(
+                    fontSize: 17,
+                    fontWeight: FontWeight.w600,
+                    color: mainColor,
+                  ),
                   decoration: InputDecoration(
                     labelText: "Description",
                     labelStyle: TextStyle(
@@ -64,6 +80,12 @@ class _MainDNState extends State<MainDN> {
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
                       color: mainColor,
+                    ),
+                    enabledBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
+                    ),
+                    focusedBorder: UnderlineInputBorder(
+                      borderSide: BorderSide(color: mainColor),
                     ),
                   ),
                 ),
