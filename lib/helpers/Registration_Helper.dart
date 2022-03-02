@@ -25,7 +25,7 @@ class RegistrationHelper {
 
     InitializeDataBase() async {
 
-
+      final databaseRoad = await getDatabasesPath();
 
     }
 
