@@ -26,6 +26,7 @@ class RegistrationHelper {
     InitializeDataBase() async {
 
       final databaseRoad = await getDatabasesPath();
+      final databaseLocal = join(databaseRoad, "daily_notes_data.db");
 
     }
 
