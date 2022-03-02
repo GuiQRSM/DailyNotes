@@ -5,4 +5,8 @@ class RegistrationHelper {
 
   static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
+  RegistrationHelper._internal(){
+
+  }
+
 }
