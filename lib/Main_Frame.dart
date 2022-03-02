@@ -123,7 +123,7 @@ class _MainDNState extends State<MainDN> {
         title: Text("Daily Notes"),
         backgroundColor: mainColor,
         titleTextStyle: TextStyle(
-          fontSize: 19,
+          fontSize: 22,
           fontWeight: FontWeight.w600,
           color: secondaryColor,
         ),
