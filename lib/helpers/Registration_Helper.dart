@@ -25,7 +25,7 @@ class RegistrationHelper {
 
     _createSqlTable(Database db, int version) async {
 
-
+      String bornTable = "";
 
     }
 
