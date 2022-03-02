@@ -25,7 +25,8 @@ class RegistrationHelper {
 
     _createSqlTable(Database db, int version) async {
 
-      String bornTable = "";
+      String bornTable = "CREATE TABLE notes (id INTEGER PRIMARY KRY AUTOINCREMENT, title VARCHAR, description TEXT, date DATETIME  )";
+      await db.execute(bornTable);
 
     }
 
