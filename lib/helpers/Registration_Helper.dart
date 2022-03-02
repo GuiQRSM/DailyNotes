@@ -12,9 +12,16 @@ class RegistrationHelper {
   }
 
   RegistrationHelper._internal(){
+
   }
 
   get database async {
+
+    if( _db != null ){
+      return _db;
+    }else{
+
+    }
 
   }
 
