@@ -23,6 +23,12 @@ class RegistrationHelper {
 
     }
 
+    _createSqlTable(Database db, int version) async {
+
+
+
+    }
+
     InitializeDataBase() async {
 
       final databaseRoad = await getDatabasesPath();
