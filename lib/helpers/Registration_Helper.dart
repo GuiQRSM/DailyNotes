@@ -38,7 +38,7 @@ class RegistrationHelper {
       var databaseDefinitive = await openDatabase(
         databaseLocal,
         version: 1,
-        onCreate: (){},
+        onCreate: _createSqlTable,
       );
       return databaseDefinitive;
 
