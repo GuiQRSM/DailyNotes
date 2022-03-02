@@ -5,12 +5,13 @@ class RegistrationHelper {
 
   static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
+  Database _db;
+
   factory RegistrationHelper(){
     return _instanceRegistration;
   }
 
   RegistrationHelper._internal(){
-
   }
 
 }
