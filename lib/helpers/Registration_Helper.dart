@@ -33,6 +33,7 @@ class RegistrationHelper {
         version: 1,
         onCreate: (){},
       );
+      return databaseDefinitive;
 
     }
 
