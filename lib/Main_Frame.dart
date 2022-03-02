@@ -34,6 +34,7 @@ class _MainDNState extends State<MainDN> {
                 TextField(
                   controller: _titleController,
                   autofocus: true,
+                  cursorColor: mainColor,
                   style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.w600,
@@ -63,6 +64,7 @@ class _MainDNState extends State<MainDN> {
                 TextField(
                   controller: _descriptionController,
                   autofocus: true,
+                  cursorColor: mainColor,
                   style: TextStyle(
                     fontSize: 17,
                     fontWeight: FontWeight.w600,
