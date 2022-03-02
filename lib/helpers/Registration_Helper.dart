@@ -5,6 +5,10 @@ class RegistrationHelper {
 
   static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
+  factory RegistrationHelper(){
+    return _instanceRegistration;
+  }
+
   RegistrationHelper._internal(){
 
   }
