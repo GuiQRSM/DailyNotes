@@ -14,4 +14,8 @@ class RegistrationHelper {
   RegistrationHelper._internal(){
   }
 
+  get database async {
+
+  }
+
 }
