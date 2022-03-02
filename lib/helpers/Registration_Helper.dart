@@ -28,6 +28,12 @@ class RegistrationHelper {
       final databaseRoad = await getDatabasesPath();
       final databaseLocal = join(databaseRoad, "daily_notes_data.db");
 
+      var databaseDefinitive = await openDatabase(
+        databaseLocal,
+        version: 1,
+        onCreate: (){},
+      );
+
     }
 
   }
