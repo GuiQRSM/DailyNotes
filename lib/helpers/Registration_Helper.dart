@@ -23,6 +23,12 @@ class RegistrationHelper {
 
     }
 
+    InitializeDataBase() async {
+
+
+
+    }
+
   }
 
 }
