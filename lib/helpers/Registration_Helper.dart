@@ -3,6 +3,6 @@ import 'package:path/path.dart';
 
 class RegistrationHelper {
 
-
+  static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
 }
