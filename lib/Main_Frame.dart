@@ -119,6 +119,9 @@ class _MainDNState extends State<MainDN> {
 
   _saveAnnotations() {
 
+    String getTitleNote = _titleController.text;
+    String getDescNote = _descriptionController.text;
+
   }
 
   @override
