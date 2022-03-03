@@ -55,6 +55,8 @@ class RegistrationHelper {
 
   Future<int> saveNoteHelper(AnnotationModel infoNote) async {
 
+    var receiveGetNaming = database;
+
   }
 
 }
