@@ -24,27 +24,26 @@ class RegistrationHelper {
 
     }
 
-    _createSqlTable(Database db, int version) async {
+  }
 
-      String bornTable = "CREATE TABLE notes (id INTEGER PRIMARY KRY AUTOINCREMENT, title VARCHAR, description TEXT, date DATETIME  )";
-      await db.execute(bornTable);
+  _createSqlTable(Database db, int version) async {
 
-    }
+    String bornTable = "CREATE TABLE notes (id INTEGER PRIMARY KRY AUTOINCREMENT, title VARCHAR, description TEXT, date DATETIME  )";
+    await db.execute(bornTable);
 
-    InitializeDataBase() async {
+  }
 
-      final databaseRoad = await getDatabasesPath();
-      final databaseLocal = join(databaseRoad, "daily_notes_data.db");
+  initializeDataBase() async {
 
-      var databaseDefinitive = await openDatabase(
-        databaseLocal,
-        version: 1,
-        onCreate: _createSqlTable,
-      );
-      return databaseDefinitive;
+    final databaseRoad = await getDatabasesPath();
+    final databaseLocal = join(databaseRoad, "daily_notes_data.db");
 
-    }
-
+    var databaseDefinitive = await openDatabase(
+      databaseLocal,
+      version: 1,
+      onCreate: _createSqlTable,
+    );
+    return databaseDefinitive;
   }
 
 }
