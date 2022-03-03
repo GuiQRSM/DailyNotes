@@ -53,7 +53,7 @@ class RegistrationHelper {
     return databaseDefinitive;
   }
 
-  saveNoteHelper(AnnotationModel infoNote) {
+  Future<int> saveNoteHelper(AnnotationModel infoNote) async {
 
   }
 
