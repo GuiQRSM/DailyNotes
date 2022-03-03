@@ -1,3 +1,4 @@
+import 'package:daily_notes/models/Annotations_Model.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
 
@@ -108,6 +109,7 @@ class _MainDNState extends State<MainDN> {
                 child: Text("Save"),
                 onPressed: (){
                   Navigator.pop(context);
+                  _saveAnnotations();
                 },
               ),
             ],
@@ -121,6 +123,8 @@ class _MainDNState extends State<MainDN> {
 
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
+
+    AnnotationModel infoNote = AnnotationModel(id, title, description, date);
 
   }
 
