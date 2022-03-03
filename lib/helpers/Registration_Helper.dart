@@ -5,6 +5,8 @@ import 'package:path/path.dart';
 
 class RegistrationHelper {
 
+  String tableName = "notes";
+
   static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
   Database _db;
@@ -56,6 +58,7 @@ class RegistrationHelper {
   Future<int> saveNoteHelper(AnnotationModel infoNote) async {
 
     var receiveGetNaming = database;
+    int id = await receiveGetNaming.insert(tableName);
 
   }
 
