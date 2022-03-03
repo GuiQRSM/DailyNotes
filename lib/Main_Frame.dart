@@ -1,3 +1,4 @@
+import 'package:daily_notes/helpers/Registration_Helper.dart';
 import 'package:daily_notes/models/Annotations_Model.dart';
 import 'package:flutter/material.dart';
 import 'package:sqflite/sqflite.dart';
@@ -15,6 +16,7 @@ class _MainDNState extends State<MainDN> {
   var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
+  var databaseHelper = RegistrationHelper();
 
   _dialogAddAndSave() {
 
