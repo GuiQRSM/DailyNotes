@@ -1,4 +1,5 @@
 //@dart=2.9
+import 'package:daily_notes/models/Annotations_Model.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -50,6 +51,10 @@ class RegistrationHelper {
       onCreate: _createSqlTable,
     );
     return databaseDefinitive;
+  }
+
+  saveNoteHelper(AnnotationModel infoNote) {
+
   }
 
 }
