@@ -16,7 +16,7 @@ class _MainDNState extends State<MainDN> {
   var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
-  var databaseHelper = RegistrationHelper();
+  var _databaseHelper = RegistrationHelper();
 
   _dialogAddAndSave() {
 
@@ -126,7 +126,8 @@ class _MainDNState extends State<MainDN> {
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
 
-    AnnotationModel infoNote = AnnotationModel(id, title, description, date);
+    AnnotationModel infoNote = AnnotationModel(0, "title", "description", "date");
+    _databaseHelper.saveNoteHelper(infoNote);
 
   }
 
