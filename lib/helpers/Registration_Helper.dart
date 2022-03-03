@@ -21,7 +21,8 @@ class RegistrationHelper {
     if( _db != null ){
       return _db;
     }else{
-
+      _db = await initializeDataBase();
+      return _db;
     }
 
   }
