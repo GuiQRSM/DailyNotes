@@ -59,6 +59,7 @@ class RegistrationHelper {
 
     var receiveGetNaming = database;
     int id = await receiveGetNaming.insert(_tableName, infoNote.toMap());
+    return id;
 
   }
 
