@@ -16,6 +16,8 @@ class AnnotationModel {
       "date": this.date,
     };
 
+    return mapRecords;
+
   }
 
 }
