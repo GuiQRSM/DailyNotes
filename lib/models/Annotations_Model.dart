@@ -16,6 +16,10 @@ class AnnotationModel {
       "date": this.date,
     };
 
+    if( this.id != null ){
+
+    }
+
     return mapRecords;
 
   }
