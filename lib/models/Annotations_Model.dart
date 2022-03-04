@@ -10,7 +10,11 @@ class AnnotationModel {
 
   Map toMap() {
 
-
+    Map<String, dynamic> mapRecords = {
+      "title": this.title,
+      "description": this.description,
+      "date": this.date,
+    };
 
   }
 
