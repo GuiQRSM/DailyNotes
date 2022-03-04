@@ -126,9 +126,9 @@ class _MainDNState extends State<MainDN> {
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
 
-    print("DataTimeActual: ${DateTime.now().toString()}");
+    //print("DataTimeActual: ${DateTime.now().toString()}");
 
-    AnnotationModel infoNote = AnnotationModel(0, "title", "description", "date");
+    AnnotationModel infoNote = AnnotationModel(0, "title", "description", DateTime.now().toString());
     _databaseHelper.saveNoteHelper(infoNote);
 
   }

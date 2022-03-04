@@ -33,7 +33,7 @@ class RegistrationHelper {
   _createSqlTable(Database db, int version) async {
 
     String bornTable = "CREATE TABLE $_tableName ("
-        "id INTEGER PRIMARY KRY AUTOINCREMENT,"
+        "id INTEGER PRIMARY KEY AUTOINCREMENT,"
         " title VARCHAR,"
         " description TEXT,"
         " date DATETIME"
