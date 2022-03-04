@@ -8,4 +8,10 @@ class AnnotationModel {
 
   AnnotationModel(this.id, this.title, this.description, this.date);
 
+  Map toMap() {
+
+
+
+  }
+
 }

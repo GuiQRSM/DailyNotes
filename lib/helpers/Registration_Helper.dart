@@ -5,7 +5,7 @@ import 'package:path/path.dart';
 
 class RegistrationHelper {
 
-  String tableName = "notes";
+  static final String _tableName = "notes";
 
   static final RegistrationHelper _instanceRegistration = RegistrationHelper._internal();
 
@@ -32,7 +32,7 @@ class RegistrationHelper {
 
   _createSqlTable(Database db, int version) async {
 
-    String bornTable = "CREATE TABLE notes ("
+    String bornTable = "CREATE TABLE $_tableName ("
         "id INTEGER PRIMARY KRY AUTOINCREMENT,"
         " title VARCHAR,"
         " description TEXT,"
@@ -58,7 +58,7 @@ class RegistrationHelper {
   Future<int> saveNoteHelper(AnnotationModel infoNote) async {
 
     var receiveGetNaming = database;
-    int id = await receiveGetNaming.insert(tableName);
+    int id = await receiveGetNaming.insert(_tableName);
 
   }
 

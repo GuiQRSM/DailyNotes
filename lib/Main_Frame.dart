@@ -126,7 +126,7 @@ class _MainDNState extends State<MainDN> {
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
 
-    AnnotationModel infoNote = AnnotationModel(id, title, description, date);
+    AnnotationModel infoNote = AnnotationModel(0, "title", "description", "date");
     _databaseHelper.saveNoteHelper(infoNote);
 
   }
