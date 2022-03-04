@@ -58,7 +58,7 @@ class RegistrationHelper {
   Future<int> saveNoteHelper(AnnotationModel infoNote) async {
 
     var receiveGetNaming = database;
-    int id = await receiveGetNaming.insert(_tableName);
+    int id = await receiveGetNaming.insert(_tableName, infoNote.toMap());
 
   }
 
