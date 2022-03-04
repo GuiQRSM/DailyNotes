@@ -121,7 +121,7 @@ class _MainDNState extends State<MainDN> {
 
   }
 
-  _saveAnnotations() {
+  _saveAnnotations() async {
 
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
@@ -129,7 +129,8 @@ class _MainDNState extends State<MainDN> {
     //print("DataTimeActual: ${DateTime.now().toString()}");
 
     AnnotationModel infoNote = AnnotationModel(0, "title", "description", DateTime.now().toString());
-    _databaseHelper.saveNoteHelper(infoNote);
+    int rescueresult = await _databaseHelper.saveNoteHelper(infoNote);
+
 
   }
 
