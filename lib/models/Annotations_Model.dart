@@ -17,7 +17,7 @@ class AnnotationModel {
     };
 
     if( this.id != null ){
-
+      mapRecords["id"] = this.id;
     }
 
     return mapRecords;
