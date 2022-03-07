@@ -18,6 +18,12 @@ class _MainDNState extends State<MainDN> {
   TextEditingController _descriptionController = TextEditingController();
   var _databaseHelper = RegistrationHelper();
 
+  dynamic get description => null;
+
+  dynamic get title => null;
+
+  dynamic get id => null;
+
   _dialogAddAndSave() {
 
     showDialog(
@@ -128,7 +134,7 @@ class _MainDNState extends State<MainDN> {
 
     //print("DataTimeActual: ${DateTime.now().toString()}");
 
-    AnnotationModel infoNote = AnnotationModel(0, "title", "description", DateTime.now().toString());
+    AnnotationModel infoNote = AnnotationModel(id, title, description, DateTime.now().toString());
     int rescueresult = await _databaseHelper.saveNoteHelper(infoNote);
     print("DataTimeActual: ${rescueresult.toString()}");
 
