@@ -67,6 +67,7 @@ class RegistrationHelper {
 
     var receiveGetNaming = await database;
     String sqlCommand = "";
+    List listNotes = await database.rawQuery( sqlCommand );
 
   }
 
