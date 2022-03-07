@@ -138,6 +138,9 @@ class _MainDNState extends State<MainDN> {
     int rescueresult = await _databaseHelper.saveNoteHelper(infoNote);
     print("DataTimeActual: ${rescueresult.toString()}");
 
+    _titleController.clear();
+    _descriptionController.clear();
+
 
   }
 
