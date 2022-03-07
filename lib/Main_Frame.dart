@@ -127,7 +127,9 @@ class _MainDNState extends State<MainDN> {
 
   }
 
-  _rescueAnnotations() {
+  _rescueAnnotations() async {
+
+    List recoveredNotes = await _databaseHelper.rescueNoteHelper();
 
   }
 

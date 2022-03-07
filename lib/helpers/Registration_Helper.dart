@@ -63,7 +63,7 @@ class RegistrationHelper {
 
   }
 
-  _rescueNoteHelper() async {
+  rescueNoteHelper() async {
 
     var receiveGetNaming = await database;
     String sqlCommand = "SELECT * FROM $tableName ORDER BY date DESC";
