@@ -66,7 +66,7 @@ class RegistrationHelper {
   _rescueNoteHelper() async {
 
     var receiveGetNaming = await database;
-    String sqlCommand = "";
+    String sqlCommand = "SELECT * FROM $tableName ORDER BY date DESC";
     List listNotes = await database.rawQuery( sqlCommand );
 
   }
