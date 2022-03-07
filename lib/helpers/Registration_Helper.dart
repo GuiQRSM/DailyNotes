@@ -65,7 +65,7 @@ class RegistrationHelper {
 
   _rescueNoteHelper() async {
 
-
+    var receiveGetNaming = await database;
 
   }
 
