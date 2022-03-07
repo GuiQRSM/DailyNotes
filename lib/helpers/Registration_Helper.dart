@@ -63,4 +63,10 @@ class RegistrationHelper {
 
   }
 
+  _rescueNoteHelper() async {
+
+
+
+  }
+
 }
