@@ -127,6 +127,10 @@ class _MainDNState extends State<MainDN> {
 
   }
 
+  _rescueAnnotations() {
+
+  }
+
   _saveAnnotations() async {
 
     String getTitleNote = _titleController.text;
