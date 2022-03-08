@@ -143,6 +143,8 @@ class _MainDNState extends State<MainDN> {
     _titleController.clear();
     _descriptionController.clear();
 
+    _rescueAnnotations();
+
   }
 
   _rescueAnnotations() async {
