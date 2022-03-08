@@ -18,7 +18,7 @@ class _MainDNState extends State<MainDN> {
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
   var _databaseHelper = RegistrationHelper();
-  List<AnnotationModel> annotationModelList = List<AnnotationModel>();
+  List<AnnotationModel> _annotationModelList = List<AnnotationModel>();
 
   dynamic get description => _descriptionController.text;
 
@@ -149,6 +149,7 @@ class _MainDNState extends State<MainDN> {
 
     List recoveredNotes = await _databaseHelper.rescueNoteHelper();
 
+    List<AnnotationModel> temporaryNotelist = List<AnnotationModel>();
     for( var runner in recoveredNotes ){
 
     }
