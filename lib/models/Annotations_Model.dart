@@ -8,6 +8,10 @@ class AnnotationModel {
 
   AnnotationModel(this.id, this.title, this.description, this.date);
 
+  AnnotationModel.fromMap(Map mapConverter){
+
+  }
+
   Map toMap() {
 
     Map<String, dynamic> mapRecords = {
