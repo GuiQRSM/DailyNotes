@@ -191,7 +191,10 @@ class _MainDNState extends State<MainDN> {
       body: Column(
         children: <Widget>[
           Expanded(
-              child: child,
+              child: ListView.builder(
+                   itemCount: ,
+                  itemBuilder: (){},
+              ),
           ),
         ],
       ),
