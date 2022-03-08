@@ -189,7 +189,11 @@ class _MainDNState extends State<MainDN> {
         ),
       ),
       body: Column(
-        children: <Widget>[],
+        children: <Widget>[
+          Expanded(
+              child: child,
+          ),
+        ],
       ),
       floatingActionButton: FloatingActionButton.extended(
           label: Text(
