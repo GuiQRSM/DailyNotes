@@ -192,8 +192,12 @@ class _MainDNState extends State<MainDN> {
         children: <Widget>[
           Expanded(
               child: ListView.builder(
-                   itemCount: ,
-                  itemBuilder: (){},
+                   itemCount: _annotationModelList.length,
+                  itemBuilder: (context, index){
+                     return Card(
+
+                     );
+                  },
               ),
           ),
         ],
