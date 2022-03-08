@@ -194,8 +194,14 @@ class _MainDNState extends State<MainDN> {
               child: ListView.builder(
                    itemCount: _annotationModelList.length,
                   itemBuilder: (context, index){
-                     return Card(
 
+                     final setNotes = _annotationModelList[index];
+
+                     return Card(
+                       child: ListTile(
+                         title: Text("${setNotes.title}"),
+                         subtitle: Text("${setNotes.date} - ${setNotes.description}"),
+                       ),
                      );
                   },
               ),
