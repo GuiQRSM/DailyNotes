@@ -18,9 +18,9 @@ class _MainDNState extends State<MainDN> {
   TextEditingController _descriptionController = TextEditingController();
   var _databaseHelper = RegistrationHelper();
 
-  dynamic get description => null;
+  dynamic get description => _descriptionController.text;
 
-  dynamic get title => null;
+  dynamic get title => _titleController.text;
 
   dynamic get id => null;
 
@@ -147,10 +147,15 @@ class _MainDNState extends State<MainDN> {
 
     List recoveredNotes = await _databaseHelper.rescueNoteHelper();
 
+    print("RescueNotesStatus: ${recoveredNotes}");
+
   }
 
   @override
   Widget build(BuildContext context) {
+
+    _rescueAnnotations();
+
     return Scaffold(
       backgroundColor: secondaryColor,
       appBar: AppBar(
