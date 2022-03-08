@@ -157,6 +157,7 @@ class _MainDNState extends State<MainDN> {
     setState(() {
       _annotationModelList = temporaryNotelist;
     });
+    temporaryNotelist = null;
 
     print("RescueNotesStatus: ${recoveredNotes}");
 
