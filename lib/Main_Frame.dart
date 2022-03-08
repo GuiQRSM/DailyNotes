@@ -167,9 +167,13 @@ class _MainDNState extends State<MainDN> {
   }
 
   @override
-  Widget build(BuildContext context) {
-
+  void initState() {
+    // TODO: implement initState
     _rescueAnnotations();
+  }
+
+  @override
+  Widget build(BuildContext context) {
 
     return Scaffold(
       backgroundColor: secondaryColor,
