@@ -127,12 +127,6 @@ class _MainDNState extends State<MainDN> {
 
   }
 
-  _rescueAnnotations() async {
-
-    List recoveredNotes = await _databaseHelper.rescueNoteHelper();
-
-  }
-
   _saveAnnotations() async {
 
     String getTitleNote = _titleController.text;
@@ -147,6 +141,11 @@ class _MainDNState extends State<MainDN> {
     _titleController.clear();
     _descriptionController.clear();
 
+  }
+
+  _rescueAnnotations() async {
+
+    List recoveredNotes = await _databaseHelper.rescueNoteHelper();
 
   }
 
