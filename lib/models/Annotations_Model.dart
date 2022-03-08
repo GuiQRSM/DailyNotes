@@ -1,3 +1,4 @@
+//@dart=2.9
 
 class AnnotationModel {
 
@@ -9,6 +10,11 @@ class AnnotationModel {
   AnnotationModel(this.id, this.title, this.description, this.date);
 
   AnnotationModel.fromMap(Map mapConverter){
+
+    this.id = mapConverter["id"];
+    this.title = mapConverter["title"];
+    this.description = mapConverter["description"];
+    this.date = mapConverter["date"];
 
   }
 
