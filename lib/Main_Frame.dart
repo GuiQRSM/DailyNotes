@@ -149,7 +149,7 @@ class _MainDNState extends State<MainDN> {
 
     List recoveredNotes = await _databaseHelper.rescueNoteHelper();
 
-    for( in ){
+    for( var runner in recoveredNotes ){
 
     }
 
