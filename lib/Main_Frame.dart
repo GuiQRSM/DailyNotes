@@ -153,6 +153,7 @@ class _MainDNState extends State<MainDN> {
     for( var runner in recoveredNotes ){
 
       AnnotationModel converterNotes = AnnotationModel.fromMap(runner);
+      temporaryNotelist.add(converterNotes);
 
     }
 
