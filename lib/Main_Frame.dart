@@ -17,6 +17,7 @@ class _MainDNState extends State<MainDN> {
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
   var _databaseHelper = RegistrationHelper();
+  List<AnnotationModel> annotationModelList = List<AnnotationModel>();
 
   dynamic get description => _descriptionController.text;
 
