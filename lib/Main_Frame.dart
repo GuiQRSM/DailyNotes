@@ -203,6 +203,7 @@ class _MainDNState extends State<MainDN> {
                          title: Text("${setNotes.title}"),
                          subtitle: Text("${setNotes.date} - ${setNotes.description}"),
                        ),
+                       color: cardColor,
                      );
                   },
               ),
