@@ -173,6 +173,8 @@ class _MainDNState extends State<MainDN> {
 
   _dateFormatter(String formatted ) {
 
+    initializeDateFormatting("pt_BR");
+
   }
 
   @override
