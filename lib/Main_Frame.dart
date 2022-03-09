@@ -212,7 +212,7 @@ class _MainDNState extends State<MainDN> {
                              ),
                          ),
                          subtitle: Text(
-                             "${setNotes.date} - ${setNotes.description}",
+                             "${_dateFormatter(setNotes.date)} - ${setNotes.description}",
                              style: TextStyle(
                                fontSize: 16,
                                fontWeight: FontWeight.w600
