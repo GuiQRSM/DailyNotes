@@ -202,6 +202,7 @@ class _MainDNState extends State<MainDN> {
                        child: ListTile(
                          title: Text("${setNotes.title}"),
                          subtitle: Text("${setNotes.date} - ${setNotes.description}"),
+                         textColor: mainColor,
                        ),
                        color: cardColor,
                      );
