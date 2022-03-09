@@ -200,8 +200,20 @@ class _MainDNState extends State<MainDN> {
 
                      return Card(
                        child: ListTile(
-                         title: Text("${setNotes.title}"),
-                         subtitle: Text("${setNotes.date} - ${setNotes.description}"),
+                         title: Text(
+                             "${setNotes.title}",
+                             style: TextStyle(
+                               fontSize: 22,
+                               fontWeight: FontWeight.w500
+                             ),
+                         ),
+                         subtitle: Text(
+                             "${setNotes.date} - ${setNotes.description}",
+                             style: TextStyle(
+                               fontSize: 16,
+                               fontWeight: FontWeight.w600
+                             ),
+                         ),
                          textColor: mainColor,
                        ),
                        color: cardColor,
