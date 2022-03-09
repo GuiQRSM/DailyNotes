@@ -178,7 +178,7 @@ class _MainDNState extends State<MainDN> {
     var definitiveFormatter = DateFormat("y/M/d");
 
     DateTime formableContent = DateTime.parse(formatted);
-    String converterFormatter = definitiveFormatter.format();
+    String converterFormatter = definitiveFormatter.format(formableContent);
 
   }
 
