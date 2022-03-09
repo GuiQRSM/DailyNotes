@@ -15,6 +15,7 @@ class _MainDNState extends State<MainDN> {
 
   var mainColor = Color.fromRGBO(220, 20, 60, 1);
   var secondaryColor =  Color.fromRGBO(240, 128, 128, 1);
+  var cardColor = Color.fromRGBO(255, 218, 185, 1);
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
   var _databaseHelper = RegistrationHelper();
