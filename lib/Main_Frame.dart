@@ -230,7 +230,11 @@ class _MainDNState extends State<MainDN> {
                              ),
                          ),
                          textColor: mainColor,
-                         trailing: ,
+                         trailing: Row(
+                           children: <Widget>[
+
+                           ],
+                         ),
                        ),
                        color: cardColor,
                      );
