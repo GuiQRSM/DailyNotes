@@ -150,12 +150,18 @@ class _MainDNState extends State<MainDN> {
 
     if(updatedNotes == null){
 
+      AnnotationModel infoNote = AnnotationModel(id, title, description, DateTime.now().toString());
+      int rescueresult = await _databaseHelper.saveNoteHelper(infoNote);
+
     }else{
+
+      updatedNotes.title = getTitleNote;
+      updatedNotes.description = getDescNote;
+      updatedNotes.date = DateTime.now().toString();
 
     }
 
-    AnnotationModel infoNote = AnnotationModel(id, title, description, DateTime.now().toString());
-    int rescueresult = await _databaseHelper.saveNoteHelper(infoNote);
+
 
     _titleController.clear();
     _descriptionController.clear();
