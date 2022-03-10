@@ -130,7 +130,7 @@ class _MainDNState extends State<MainDN> {
                 padding: EdgeInsets.all(10),
                 color: mainColor,
                 textColor: secondaryColor,
-                child: Text("Save"),
+                child: Text("$updaterText"),
                 onPressed: (){
                   Navigator.pop(context);
                   _saveAnnotations();
@@ -143,7 +143,7 @@ class _MainDNState extends State<MainDN> {
 
   }
 
-  _saveAnnotations() async {
+  _saveAnnotations({AnnotationModel updatedNotes}) async {
 
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
