@@ -37,14 +37,16 @@ class _MainDNState extends State<MainDN> {
       _descriptionController.text = "";
       updaterText = "Save";
     }else{//update
-
+      _titleController.text = dialogUpdate.title;
+      _descriptionController.text = dialogUpdate.description;
+      updaterText = "Update";
     }
 
     showDialog(
         context: context,
         builder: (context){
           return AlertDialog(
-            title: Text("Add a new note:"),
+            title: Text("$updaterText a new note:"),
             titleTextStyle: TextStyle(
               fontSize: 23,
               fontWeight: FontWeight.w600,
