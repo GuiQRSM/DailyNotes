@@ -72,4 +72,16 @@ class RegistrationHelper {
 
   }
 
+  Future<int> updateNoteHelper(AnnotationModel paramNoteUpdate) async {
+
+    var receiveGetNaming = await database;
+    return await receiveGetNaming.update(
+      tableName,
+      paramNoteUpdate.toMap(),
+      where: "id = ?",
+      whereArgs: [paramNoteUpdate.id],
+    );
+
+  }
+
 }
