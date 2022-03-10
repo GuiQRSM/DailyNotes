@@ -31,6 +31,12 @@ class _MainDNState extends State<MainDN> {
 
   _dialogAddAndSave({AnnotationModel dialogUpdate}) {
 
+    if(dialogUpdate == null){
+
+    }else{
+
+    }
+
     showDialog(
         context: context,
         builder: (context){
