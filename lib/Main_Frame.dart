@@ -231,6 +231,7 @@ class _MainDNState extends State<MainDN> {
                          ),
                          textColor: mainColor,
                          trailing: Row(
+                           mainAxisSize: MainAxisSize.min,
                            children: <Widget>[
                              GestureDetector(
                                onTap: (){
