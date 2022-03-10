@@ -158,6 +158,7 @@ class _MainDNState extends State<MainDN> {
       updatedNotes.title = getTitleNote;
       updatedNotes.description = getDescNote;
       updatedNotes.date = DateTime.now().toString();
+      int rescueresult = await _databaseHelper.updateNoteHelper(updatedNotes);
 
     }
 
