@@ -29,7 +29,7 @@ class _MainDNState extends State<MainDN> {
 
   dynamic get id => null;
 
-  _dialogAddAndSave() {
+  _dialogAddAndSave({AnnotationModel dialogUpdate}) {
 
     showDialog(
         context: context,
