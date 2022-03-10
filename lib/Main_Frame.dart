@@ -241,7 +241,21 @@ class _MainDNState extends State<MainDN> {
                                  padding: EdgeInsets.only(right: 16),
                                  child: Icon(
                                    Icons.edit,
+                                   size: 27,
                                    color: mainColor,
+                                 ),
+                               ),
+                             ),
+                             GestureDetector(
+                               onTap: (){
+
+                               },
+                               child: Padding(
+                                 padding: EdgeInsets.only(right: 0),
+                                 child: Icon(
+                                   Icons.delete_forever,
+                                   size: 30,
+                                   color: secondaryColor,
                                  ),
                                ),
                              ),
