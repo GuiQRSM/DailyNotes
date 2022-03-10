@@ -32,9 +32,11 @@ class _MainDNState extends State<MainDN> {
   _dialogAddAndSave({AnnotationModel dialogUpdate}) {
 
     String updaterText = "";
-    if(dialogUpdate == null){
-
-    }else{
+    if(dialogUpdate == null){//save
+      _titleController.text = "";
+      _descriptionController.text = "";
+      updaterText = "Save";
+    }else{//update
 
     }
 
