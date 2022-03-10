@@ -235,7 +235,7 @@ class _MainDNState extends State<MainDN> {
                            children: <Widget>[
                              GestureDetector(
                                onTap: (){
-
+                                 _dialogAddAndSave(dialogUpdate: setNotes);
                                },
                                child: Padding(
                                  padding: EdgeInsets.only(right: 16),
