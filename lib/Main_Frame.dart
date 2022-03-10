@@ -238,6 +238,10 @@ class _MainDNState extends State<MainDN> {
                                },
                                child: Padding(
                                  padding: EdgeInsets.only(right: 16),
+                                 child: Icon(
+                                   Icons.edit,
+                                   color: mainColor,
+                                 ),
                                ),
                              ),
                            ],
