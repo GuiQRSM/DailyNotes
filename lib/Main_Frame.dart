@@ -236,6 +236,9 @@ class _MainDNState extends State<MainDN> {
                                onTap: (){
 
                                },
+                               child: Padding(
+                                 padding: EdgeInsets.only(right: 16),
+                               ),
                              ),
                            ],
                          ),
