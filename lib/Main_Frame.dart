@@ -133,7 +133,7 @@ class _MainDNState extends State<MainDN> {
                 child: Text("$updaterText"),
                 onPressed: (){
                   Navigator.pop(context);
-                  _saveAnnotations();
+                  _saveAnnotations(updatedNotes: dialogUpdate);
                 },
               ),
             ],
