@@ -31,6 +31,7 @@ class _MainDNState extends State<MainDN> {
 
   _dialogAddAndSave({AnnotationModel dialogUpdate}) {
 
+    String updaterText = "";
     if(dialogUpdate == null){
 
     }else{
