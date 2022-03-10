@@ -232,7 +232,11 @@ class _MainDNState extends State<MainDN> {
                          textColor: mainColor,
                          trailing: Row(
                            children: <Widget>[
-                             GestureDetector(),
+                             GestureDetector(
+                               onTap: (){
+
+                               },
+                             ),
                            ],
                          ),
                        ),
