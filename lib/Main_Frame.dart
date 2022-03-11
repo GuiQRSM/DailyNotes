@@ -133,7 +133,7 @@ class _MainDNState extends State<MainDN> {
                 child: Text("$updaterText"),
                 onPressed: (){
                   Navigator.pop(context);
-                  _saveAnnotations(updatedNotes: dialogUpdate);
+                  _saveAndUpdateAnnotations(updatedNotes: dialogUpdate);
                 },
               ),
             ],
@@ -143,7 +143,7 @@ class _MainDNState extends State<MainDN> {
 
   }
 
-  _saveAnnotations({AnnotationModel updatedNotes}) async {
+  _saveAndUpdateAnnotations({AnnotationModel updatedNotes}) async {
 
     String getTitleNote = _titleController.text;
     String getDescNote = _descriptionController.text;
