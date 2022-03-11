@@ -84,4 +84,15 @@ class RegistrationHelper {
 
   }
 
+  Future<int> removeNoteHelper(delIdHelper) async {
+
+    var receiveGetNaming = await database;
+    return await receiveGetNaming.delete(
+      tableName,
+      where: "id = ?",
+      whereArgs: [delIdHelper],
+    );
+
+  }
+
 }
