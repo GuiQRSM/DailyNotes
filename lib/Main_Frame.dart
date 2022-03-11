@@ -273,7 +273,7 @@ class _MainDNState extends State<MainDN> {
                              ),
                              GestureDetector(
                                onTap: (){
-
+                                 _removeAnnotations(setNotes.id);
                                },
                                child: Padding(
                                  padding: EdgeInsets.only(right: 0),
