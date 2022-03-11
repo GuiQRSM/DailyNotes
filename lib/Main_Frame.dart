@@ -192,6 +192,10 @@ class _MainDNState extends State<MainDN> {
 
   }
 
+  _removeAnnotations(int delId) async {
+
+  }
+
   _dateFormatter(String formatted ) {
 
     initializeDateFormatting("pt_BR");
