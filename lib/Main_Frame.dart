@@ -196,6 +196,8 @@ class _MainDNState extends State<MainDN> {
 
     await _databaseHelper.removeNoteHelper(delId);
 
+    _rescueAnnotations();
+
   }
 
   _dateFormatter(String formatted ) {
